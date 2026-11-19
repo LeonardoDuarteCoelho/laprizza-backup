@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LaPrizza Backups: a private Google Drive backup integration for the LaPrizza academic project.">
+  <title>LaPrizza Backups</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <p class="eyebrow">LaPrizza academic project</p>
+    <h1>LaPrizza Backups</h1>
+    <p>A private integration for storing and recovering encrypted project backups in the team's Google Drive account.</p>
+
+    <section aria-labelledby="purpose">
+      <h2 id="purpose">Purpose and Google Drive access</h2>
+      <p>The integration uses rclone to transfer backup archives to Google Drive. It requests the <code>drive.file</code> permission to manage files created by this integration, including uploading, listing, downloading and deleting its backup files.</p>
+      <p>Backup content and file names are encrypted using rclone crypt before being stored in Drive. Authorized operators keep the recovery secrets separately from the remote backup files.</p>
+    </section>
+
+    <section aria-labelledby="status">
+      <h2 id="status">Configuration status</h2>
+      <p>This integration is being configured for SYS08. Database backup generation, scheduling, retention and recovery validation must be completed before routine operation.</p>
+      <p>This public website provides information about the integration. Backup files, account credentials and recovery secrets are kept in restricted storage.</p>
+    </section>
+
+    <section aria-labelledby="contact">
+      <h2 id="contact">Contact</h2>
+      <p>LaPrizza project team: <a href="mailto:1240973@isep.ipp.pt">1240973@isep.ipp.pt</a>.</p>
+    </section>
+
+    <footer>
+      <nav aria-label="Information"><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a></nav>
+    </footer>
+  </main>
+</body>
+</html>
